@@ -7,14 +7,17 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #000000;
-    background-image: 
-        radial-gradient(circle at 25% 25%, rgba(70, 169, 163, 0.1) 0%, transparent 75%),
-        radial-gradient(circle at 75% 75%, rgba(70, 169, 163, 0.08) 0%, transparent 75%),
-        radial-gradient(circle at 50% 50%, rgba(70, 169, 163, 0.05) 0%, transparent 75%),
-        linear-gradient(45deg, transparent 30%, rgba(70, 169, 163, 0.03) 50%, transparent 70%);
-    background-size: 400px 400px, 600px 600px, 800px 800px, 100% 100%;
-    background-position: 0 0, 200px 200px, 400px 400px, 0 0;
+    background: #0b0b0b;
+    background-image:
+        radial-gradient(1200px 1200px at 20% 15%, rgba(70, 169, 163, 0.10), transparent 60%),
+        radial-gradient(1600px 1600px at 80% 85%, rgba(70, 169, 163, 0.08), transparent 65%),
+        radial-gradient(2000px 2000px at 50% 50%, rgba(70, 169, 163, 0.06), transparent 70%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0) 30%),
+        radial-gradient(1000px 800px at 50% -10%, rgba(255, 255, 255, 0.03), transparent 60%);
+    background-size: cover, cover, cover, 100% 100%, cover;
+    background-position: center, center, center, 0 0, center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
     color: #ffffff;
@@ -135,7 +138,7 @@ body {
 }
 
 .logo-image {
-    max-width: 300px;
+    max-width: 220px;
     height: auto;
     filter: drop-shadow(0 0 20px rgba(70, 169, 163, 0.3));
     transition: transform 0.3s ease;
@@ -596,7 +599,7 @@ body {
 
 @media (max-width: 480px) {
     .logo-image {
-        max-width: 250px;
+        max-width: 180px;
     }
     
     .hero-title {
